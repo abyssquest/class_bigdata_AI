@@ -15,6 +15,7 @@ tf.model.summary()
 
 # fit() trains the model and returns history of train
 history = tf.model.fit(x_train, y_train, epochs=100)
+# epochs: 학습 횟수
 
 y_predict = tf.model.predict(np.array([5, 4]))
 print(y_predict)

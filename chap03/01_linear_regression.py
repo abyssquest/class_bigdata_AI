@@ -21,12 +21,13 @@ import numpy as np
 x_train = [1, 2, 3, 4]
 y_train = [0, -1, -2, -3]
 
+# 모형 클래스 객체 생성
 tf.model = tf.keras.Sequential()
 
 # input_dim: input shape, units: output shape
 tf.model.add(tf.keras.layers.Dense(input_dim=1, units=1))
 
-# SGD(Stochastic Gradient Descent, Gradient Descendent), lr(learning rate)
+# SGD(Stochastic Gradient Descent 확률적 경사 하강법, Gradient Descendent 경사하강법), lr(learning rate)
 sgd = tf.keras.optimizers.SGD(lr=0.1)
 
 # mse(mean_squared_error)
